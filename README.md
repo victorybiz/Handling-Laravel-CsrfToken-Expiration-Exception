@@ -3,9 +3,9 @@
 In Laravel, when you submit a form with expired csrf token, an error with `TokenMismatchException` is thrown.
 
 To handle this exception gracefully and redirect back tom the form with an error message and form inputs,
-look at your app/Exceptions/Handler.php, at the render($request, Exception $exception) method/function.
+look at your `app/Exceptions/Handler.php`, at the `render($request, Exception $exception)` method/function.
 
-Refactor the ender($request, Exception $exception) method/function with the codes below.
+Refactor the `render($request, Exception $exception)` method/function with the codes below.
 
 ```php
    public function render($request, Exception $exception)
